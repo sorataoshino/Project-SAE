@@ -14,4 +14,9 @@ public class Interactor : MonoBehaviour
         Shader.SetGlobalVector("_Position", transform.position);
         Shader.SetGlobalFloat("_Radius", radius);
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.white;
+    }
 }

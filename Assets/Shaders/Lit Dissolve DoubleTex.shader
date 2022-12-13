@@ -8,7 +8,7 @@ Shader "Toon/Lit Dissolve DoubleTex" {
         _NoiseTex("Dissolve Noise", 2D) = "white"{} 
         _NScale ("Noise Scale", Range(0, 10)) = 1 
         _DisAmount("Noise Texture Opacity", Range(0.01, 1)) =0.01
-        _Radius("Radius", Range(0, 10)) = 0 
+        //_Radius("Radius", Range(0, 10)) = 0 
         _DisLineWidth("Line Width", Range(0, 2)) = 0 
         _DisLineColor("Line Tint", Color) = (1,1,1,1)   
     }
@@ -40,7 +40,7 @@ inline half4 LightingToonRamp (SurfaceOutput s, half3 lightDir, half atten)
 }
  
  
- float3 _Position; // from script
+float3 _Position; // from script
  
 sampler2D _MainTex, _SecondTex;
 float4 _Color, _Color2;
